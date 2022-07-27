@@ -8,10 +8,10 @@ with data about their spread in different Twitter sub-communities. Key takeaways
 The methodology for our data collection including the tracked keywords is detailed in the paper:  [*A. Abilov, Y. Hua, H. Matatov, O. Amir and M. Naaman. (2021). VoterFraud2020: a Multi-modal Dataset of Election Fraud Claims on Twitter.*](https://arxiv.org/abs/2101.08210) International Conference on Web and Social Media ([ICWSM 2021](https://www.icwsm.org/2021/index.html)).
 
 The dataset is enhanced with the sub-community labels to enable quick study of how URLs, images and youtube videos spread within these sub-communities. 
-The navigation on [this page](/?page=Explore+The+Dataset) provides a quick summary of the top users, tweets, videos and links shared. 
+The navigation on [this page](https://stechlab-voterfraud2020-analysis-app-yrtslm.streamlitapp.com/?page=Explore+The+Dataset) provides a quick summary of the top users, tweets, videos and links shared. 
 Of the users in our data, we found that 99,884 were later suspended by Twitter. The suspension status of users are included, allowing researchers to investigate [Twitter's response](https://blog.twitter.com/en_us/topics/company/2021/protecting--the-conversation-following-the-riots-in-washington--.html) to voter fraud claims. 
 The dataset also includes perceptual hash values for all images in the data. With these values, researchers can easily find duplicates and near-duplicate images in tweets to identify popular images. 
-[This page](http://voterfraud2020.io/?page=Top+Images) presents top images shared in the dataset.
+[This page](https://stechlab-voterfraud2020-analysis-app-yrtslm.streamlitapp.com/?page=Top+Images) presents top images shared in the dataset.
 
 The dataset can be used by researchers to study the spread, reach, and 
 dynamics of the campaign involving voter fraud claims on Twitter. The data can help expose, for example, how different 
@@ -32,7 +32,7 @@ Of these users, 52.4% were suspended. There is strong evidence that Twitter’s 
 We found that 82.7% of these “QAnon users” for whom we had network data were part of the "yellow" sub-community where suspension rates were highest (Figure 1). 
 The rate of QAnon hashtags in the yellow sub-community was 5 to 99 times higher than other sub-communities in that graph.
 - Many of the top YouTube videos shared by promoters of voter fraud claims are still available on YouTube as on 
-January 18th, 2021; all the top ten videos shared by the promoter communities were still available on YouTube on January 10th. Explore the list on [this page](/?page=Explore+The+Dataset).
+January 18th, 2021; all the top ten videos shared by the promoter communities were still available on YouTube on January 10th. Explore the list on [this page](https://stechlab-voterfraud2020-analysis-app-yrtslm.streamlitapp.com/?page=Explore+The+Dataset).
 - Additional information about the data and analysis is available in [the paper](https://arxiv.org/abs/2101.08210).
 
 ### Privacy and Ethical Considerations
