@@ -1,23 +1,27 @@
 {
-  "name": "chola",
+  "name": "voterfraud2020",
   "version": "0.0.1",
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
+    "dev": "vite dev",
+    "build": "vite build",
     "package": "svelte-kit package",
-    "preview": "svelte-kit preview"
+    "preview": "vite preview",
+    "deploy": "node ./gh-pages.js"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
+    "@sveltejs/adapter-static": "^1.0.0-next.38",
     "@sveltejs/kit": "next",
     "autoprefixer": "^10.4.2",
     "cssnano": "^5.0.17",
+    "gh-pages": "^4.0.0",
     "mdsvex": "^0.10.5",
     "postcss": "^8.4.5",
     "postcss-load-config": "^3.1.1",
     "remark-footnotes": "^4.0.1",
     "svelte": "^3.44.0",
-    "svelte-preprocess": "^4.10.1"
+    "svelte-preprocess": "^4.10.6",
+    "vite": "^3.0.3"
   },
   "type": "module"
 }

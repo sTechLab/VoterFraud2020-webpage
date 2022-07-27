@@ -2,10 +2,10 @@
   --font-family: "Lato", sans-serif;
   --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
     monospace;
-  --font-size: 22px;
+  --font-size: 1rem;
   --color: #555;
   --header-color: #333;
-  --brand-color: #f44336;
+  --brand-color: black;
   --duration-100: 100ms;
   --duration-300: 300ms;
   --base-line-height: 1.6;
@@ -124,6 +124,9 @@ pre code {
 em {
   font-style: italic;
 }
+strong {
+  font-weight:  bold;
+}
 
 /* Lists */
 ul,
@@ -170,4 +173,20 @@ blockquote p:last-child {
     padding-right: 5rem;
     padding-left: 1.25rem;
   }
+}
+
+
+.logo-img {
+  margin: 0px;
+  width: 125px;
+  margin-left: 25px;
+}
+
+nav ul {
+  width: 100%;
+  margin-top: 15px;
+}
+
+img {
+  max-width: 100%;
 }

@@ -7,8 +7,9 @@
 <header>
   <nav>
     <a class="logo" href="/">
-      <h1>{site.title}</h1>
+      <h1>VoterFraud2020</h1>
     </a>
+    <img src="https://storage.googleapis.com/voter-fraud-2020/img/logo-ct-jacobs-transparent.png" class="logo-img" alt="CT logo" />
     <ul>
       {#each site.menus as { url, name }}
         <li>
@@ -41,7 +42,7 @@
     margin-left: auto;
   }
   li {
-    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     list-style: none;
   }
   h1 {
@@ -59,9 +60,6 @@
   }
 
   @media screen and (max-width: 600px) {
-    nav {
-      display: block;
-    }
     ul {
       margin-bottom: 0;
     }

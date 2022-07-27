@@ -1,26 +1,26 @@
 const site = {
-  title: "Chola",
+  title: "VoterFraud2020",
   menus: [
     {
       name: "Home",
       url: "/",
     },
     {
-      name: "Blog",
-      url: "/blog",
+      name: "Retweet Graph Analysis",
+      url: "/retweet-graph",
     },
-    {
-      name: "About",
-      url: "/about",
-    },
-    {
-      name: "Contact",
-      url: "/contact",
-    },
-    {
-      name: "Download",
-      url: "https://github.com/sharu725/chola",
-    },
+    // {
+    //   name: "About",
+    //   url: "/about",
+    // },
+    // {
+    //   name: "Contact",
+    //   url: "/contact",
+    // },
+    // {
+    //   name: "Download",
+    //   url: "https://github.com/sharu725/chola",
+    // },
   ],
 };
 
