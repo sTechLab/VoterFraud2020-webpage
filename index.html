@@ -1,31 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="./favicon.png" />
-		<meta name="viewport" content="width=device-width" />
-		<title>VoterFraud2020 - a Twitter Dataset of Election Fraud Claims</title>
-		<meta http-equiv="content-security-policy" content="">
-	<link rel="modulepreload" href="/_app/immutable/start-de790064.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/index-03969575.js">
-	<link rel="modulepreload" href="/_app/immutable/layout.svelte-975ed711.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/index.svelte-c148cfc2.js">
-	</head>
-	<body>
-		<div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <meta http-equiv="content-security-policy" content=""><title>VoterFraud2020 - a Twitter Dataset of Election Fraud Claims | Chola</title><meta name="title" content="VoterFraud2020 - a Twitter Dataset of Election Fraud Claims" data-svelte="svelte-13638mq"><meta name="description" content="Voterfraud2020 is a multi-modal Twitter dataset with 7.6M tweets and 25.6M retweets from 2.6M users related to voter fraud claims." data-svelte="svelte-13638mq"><meta name="description" data-svelte="svelte-58ipo8">
+	<link rel="stylesheet" href="/_app/immutable/assets/__layout-f6c63896.css">
+	<link rel="modulepreload" href="/_app/immutable/start-c03ad732.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-b9ad0eed.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-9d621af3.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/index.md-b8f8521a.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/post-c29a704c.js">
+  </head>
+  <body>
+    
 
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div class="wrapper svelte-nfx3lu"><header class="svelte-1fxzmur"><nav class="svelte-1fxzmur"><a class="logo svelte-1fxzmur" href="/"><h1 class="svelte-1fxzmur">VoterFraud2020</h1></a>
+    <img src="https://storage.googleapis.com/voter-fraud-2020/img/logo-ct-jacobs-transparent.png" class="logo-img" alt="CT logo">
+    <ul class="svelte-1fxzmur"><li class="svelte-1fxzmur"><a sveltekit:prefetch="true" href="/" class="svelte-1fxzmur active">Home</a>
+        </li><li class="svelte-1fxzmur"><a sveltekit:prefetch="true" href="/retweet-graph" class="svelte-1fxzmur">Retweet Graph Analysis</a>
+        </li></ul></nav>
+</header>
+  <main>
+<p>We are making publicly available <a href="https://github.com/sTechLab/VoterFraud2020" rel="nofollow">VoterFraud2020</a>, a multi-modal Twitter
+dataset with 7.6M tweets and 25.6M retweets from 2.6M users that includes <a href="https://github.com/sTechLab/VoterFraud2020/blob/main/keywords.txt" rel="nofollow">key phrases
+and hashtags</a> related to voter fraud
+claims between October 23rd and December 16th.
+The dataset also includes the full set of links and links to YouTube videos shared in these tweets,
+with data about their spread in different Twitter sub-communities. Key takeaways from our initial analysis of the data are listed below.</p>
+<p>The methodology for our data collection including the tracked keywords is detailed in the paper:  <a href="https://arxiv.org/abs/2101.08210" rel="nofollow"><em>A. Abilov, Y. Hua, H. Matatov, O. Amir and M. Naaman. (2021). VoterFraud2020: a Multi-modal Dataset of Election Fraud Claims on Twitter.</em></a> International Conference on Web and Social Media (<a href="https://www.icwsm.org/2021/index.html" rel="nofollow">ICWSM 2021</a>).</p>
+<p>The dataset is enhanced with the sub-community labels to enable quick study of how URLs, images and youtube videos spread within these sub-communities.
+The navigation on <a href="/?page=Explore+The+Dataset">this page</a> provides a quick summary of the top users, tweets, videos and links shared.
+Of the users in our data, we found that 99,884 were later suspended by Twitter. The suspension status of users are included, allowing researchers to investigate <a href="https://blog.twitter.com/en_us/topics/company/2021/protecting--the-conversation-following-the-riots-in-washington--.html" rel="nofollow">Twitter’s response</a> to voter fraud claims.
+The dataset also includes perceptual hash values for all images in the data. With these values, researchers can easily find duplicates and near-duplicate images in tweets to identify popular images.
+<a href="http://voterfraud2020.io/?page=Top+Images" rel="nofollow">This page</a> presents top images shared in the dataset.</p>
+<p>The dataset can be used by researchers to study the spread, reach, and
+dynamics of the campaign involving voter fraud claims on Twitter. The data can help expose, for example, how different
+public figures spread different claims, and the types of engagement various narratives received. </p>
+<p>The paper, dataset, and this web page are done in a collaboration between the
+<a href="https://s.tech.cornell.edu/" rel="nofollow">Social Technologies Lab</a> at Cornell Tech and The Technion. </p>
+<p>The project was led by <a href="https://twitter.com/antonabilov" rel="nofollow">Anton Abilov</a>, <a href="http://yiqing-hua.com/" rel="nofollow">Yiqing Hua</a>, and <a href="https://twitter.com/hanamatatov" rel="nofollow">Hana Matatov</a>. Inquiries should go to Professor Mor Naaman at <a href="mailto:mor.naaman@cornell.edu">mor.naaman@cornell.edu</a>.</p>
+<h3>Key Takeaways</h3>
+<ul><li>Community detection analysis on the dataset reveals five main sub-communities involved in the discussion:
+four communities that appear to promote claims of voter fraud (<em>“promoters”</em>) and one community of <em>“detractors”</em> (colored blue in Figure 1 on this page).</li>
+<li>Preliminary analyses show that Twitter’s suspensions mostly affected a specific sub-community within the cluster of voter fraud claim promoters (suspended users are orange in Figure 2, mostly overlapping with the yellow sub-community in Figure 1).</li>
+<li>Initial analysis found 50,385 users in the data who used QAnon-related hashtags in their tweets or profile descriptions.
+Of these users, 52.4% were suspended. There is strong evidence that Twitter’s suspensions focused on the QAnon community.
+We found that 82.7% of these “QAnon users” for whom we had network data were part of the “yellow” sub-community where suspension rates were highest (Figure 1).
+The rate of QAnon hashtags in the yellow sub-community was 5 to 99 times higher than other sub-communities in that graph.</li>
+<li>Many of the top YouTube videos shared by promoters of voter fraud claims are still available on YouTube as on
+January 18th, 2021; all the top ten videos shared by the promoter communities were still available on YouTube on January 10th. Explore the list on <a href="/?page=Explore+The+Dataset">this page</a>.</li>
+<li>Additional information about the data and analysis is available in <a href="https://arxiv.org/abs/2101.08210" rel="nofollow">the paper</a>.</li></ul>
+<h3>Privacy and Ethical Considerations</h3>
+<p>The dataset was collected and made available according to Twitter’s Terms of Service for academic researchers, following
+established guidelines for ethical Twitter data use. We do not directly share content of individual tweets.
+By using Tweet IDs as the main data element the dataset does not expose information about users whose data had been removed from the service. </p>
+<p><em>Anton Abilov (<a href="https://twitter.com/antonabilov" rel="nofollow">@AntonAbilov</a>), Yiqing Hua (<a href="https://twitter.com/yiqqqing" rel="nofollow">@yiqqqing</a>), Hana Matatov (<a href="https://twitter.com/hanamatatov" rel="nofollow">@HanaMatatov</a>), Ofra Amir (<a href="https://twitter.com/ofraam" rel="nofollow">@ofraam</a>) &amp; Mor Naaman (<a href="https://twitter.com/informor" rel="nofollow">@informor</a>).</em></p>
+<img src="https://storage.googleapis.com/voter-fraud-2020/img/retweet-graph.png">
+<p><strong>Figure 1:</strong> Five communities in the retweet graph of people posting about voter-fraud claims; the blue cluster on the left side includes mainly detractors of voter-fraud claims.</p>
+<img src="https://storage.googleapis.com/voter-fraud-2020/img/retweet-graph-suspended-orange-min.jpg">
+<p><strong>Figure 2:</strong> Where suspended users were located in the retweet graph (orange); they mostly came from one specific sub-community of claim promoters (yellow in Figure 1)</p>
 
 
-		<script type="module" data-sveltekit-hydrate="1oibf46">
-		import { set_public_env, start } from "/_app/immutable/start-de790064.js";
+</main>
+</div>
+
+
+		<script type="module" data-sveltekit-hydrate="xul1ju">
+		import { set_public_env, start } from "/_app/immutable/start-c03ad732.js";
 
 		set_public_env({});
 
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="1oibf46"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="xul1ju"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,
@@ -34,11 +85,11 @@
 			hydrate: {
 				status: 200,
 				error: null,
-				nodes: [0, 2],
+				nodes: [0, 4],
 				params: {},
 				routeId: ""
 			}
 		});
-	</script></div>
-	</body>
+	</script>
+  </body>
 </html>

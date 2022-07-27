@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <meta http-equiv="content-security-policy" content=""><title>VoterFraud2020 - a Twitter Dataset of Election Fraud Claims | Chola</title><meta name="description" data-svelte="svelte-58ipo8">
+	<link rel="stylesheet" href="/_app/immutable/assets/__layout-f6c63896.css">
+	<link rel="modulepreload" href="/_app/immutable/start-c03ad732.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-b9ad0eed.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-9d621af3.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/retweet-graph.md-ef5a33d2.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/post-c29a704c.js">
+  </head>
+  <body>
+    
+
+
+<div class="wrapper svelte-nfx3lu"><header class="svelte-1fxzmur"><nav class="svelte-1fxzmur"><a class="logo svelte-1fxzmur" href="/"><h1 class="svelte-1fxzmur">VoterFraud2020</h1></a>
+    <img src="https://storage.googleapis.com/voter-fraud-2020/img/logo-ct-jacobs-transparent.png" class="logo-img" alt="CT logo">
+    <ul class="svelte-1fxzmur"><li class="svelte-1fxzmur"><a sveltekit:prefetch="true" href="/" class="svelte-1fxzmur">Home</a>
+        </li><li class="svelte-1fxzmur"><a sveltekit:prefetch="true" href="/retweet-graph" class="svelte-1fxzmur active">Retweet Graph Analysis</a>
+        </li></ul></nav>
+</header>
+  <main><p>We constructed a retweet graph of the VoterFraud2020 dataset, where nodes
+represent users and directed edges correspond to retweets between the users.
+The direction of an edge corresponds to the direction of the information
+spreading in the retweet relation. Edges are weighted according to the
+number of times the corresponding source user has been retweeted.
+The resulting network consists of 1,887,736 nodes and 16,718,884 edges.
+Since the graph only includes retweeting and retweeted users, this number corresponds to 73.8% of all users in our dataset.</p>
+<h3>Community Detection using Infomap</h3>
+<p>To detect communities within the graph, we used the <a href="https://mapequation.github.io/infomap/python/" rel="nofollow">Infomap community detection
+algorithm</a>, which captures the flow of information in directed networks.
+Using the default parameters, the algorithm produces thousands of clusters.
+By excluding all clusters that contain fewer than 1% of the nodes we are left
+with 90% of all nodes which are clustered into five communities.</p>
+<img src="https://storage.googleapis.com/voter-fraud-2020/img/community_stats.png" style="width: 49%">
+<img src="https://storage.googleapis.com/voter-fraud-2020/img/retweet-graph.png" style="width: 49%">
+<p><em><strong>Table 1 &amp; Figure 1:</strong> Five communities in the retweet graph of people posting about voter-fraud claims; the blue cluster on the left side is mostly of detractors of the claims.</em></p>
+<p>We visualize the retweet network using the Force Atlast 2 layout in Gephi.
+Figure 1 indicates that the nodes are split between two distinct
+clusters - community 0 (blue), which mostly consists of <em>“detractors”</em> of the claims, and communities 1, 2, 3 and 4 <em>(“promoters”)</em> on the right. </p>
+<h3>Labeling Suspended &amp; Deleted Users</h3>
+<p>The VoterFraud2020 dataset is also enhanced with metadata about the users’ active status.
+In total 3.9% of the accounts (99,884) in the data were suspended.</p>
+<img src="https://storage.googleapis.com/voter-fraud-2020/img/retweet-graph-suspended-orange-min.jpg" style="width: 100%;">
+<p><strong>Figure 2:</strong> Where suspended users were located in the retweet graph (orange); they mostly came from a specific subcommunity of claim promoters.</p>
+
+</main>
+</div>
+
+
+		<script type="module" data-sveltekit-hydrate="1g934ey">
+		import { set_public_env, start } from "/_app/immutable/start-c03ad732.js";
+
+		set_public_env({});
+
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="1g934ey"]').parentNode,
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [0, 5],
+				params: {},
+				routeId: "retweet-graph"
+			}
+		});
+	</script>
+  </body>
+</html>
