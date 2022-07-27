@@ -32,6 +32,6 @@ clusters - community 0 (blue), which mostly consists of _"detractors"_ of the cl
 The VoterFraud2020 dataset is also enhanced with metadata about the users' active status. 
 In total 3.9% of the accounts (99,884) in the data were suspended.
 
-<img src="https://storage.googleapis.com/voter-fraud-2020/img/retweet-graph-suspended-orange-min.jpg" style="width: 100%;">
+<img src="https://storage.googleapis.com/voter-fraud-2020/img/retweet-graph-suspended-orange-min.jpg">
 
 **Figure 2:** Where suspended users were located in the retweet graph (orange); they mostly came from a specific subcommunity of claim promoters.

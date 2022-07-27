@@ -13,14 +13,14 @@ const site = {
     //   name: "About",
     //   url: "/about",
     // },
-    // {
-    //   name: "Contact",
-    //   url: "/contact",
-    // },
-    // {
-    //   name: "Download",
-    //   url: "https://github.com/sharu725/chola",
-    // },
+    {
+      name: "The Paper (arXiv)",
+      url: "https://arxiv.org/abs/2101.08210",
+    },
+    {
+      name: "Download Data (Github)",
+      url: "https://github.com/sTechLab/VoterFraud2020",
+    },
   ],
 };
 
